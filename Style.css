@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(3, 3, 35);
+}
+.card .img-fit{
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+.card{
+    height: 100%;
+}
+.card:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
