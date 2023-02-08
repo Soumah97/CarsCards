@@ -1,12 +1,39 @@
 body{
-    background-color: rgb(3, 3, 35);
+    background-color: #241b2e;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #171520;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: white !important;
+    text-align: center;
+    padding: 12px 19.5px;
+    text-decoration: none;
+}
+.active{
+    background-color: #25a678;
+}
+li a:hover:not(.active){
+    background-color:#111;
+}
+#con2{
+    display: grid;
+    margin-top: 10px;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill);
 }
 .card .img-fit{
     aspect-ratio: 16/9;
     object-fit: cover;
-}
-.card{
-    height: 100%;
 }
 .card:hover{
     background-color: rgb(62, 62, 62);
