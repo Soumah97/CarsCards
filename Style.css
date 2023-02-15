@@ -1,7 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: #241b2e;
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
 }
-ul{
+.navigator{
+    display: block;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -11,11 +19,14 @@ ul{
 li{
     float: left;
 }
+.contactnav{
+    float: right;
+}
 li a{
-    display: block;
-    color: white !important;
+    display: flex;
+    color: white;
     text-align: center;
-    padding: 12px 19.5px;
+    padding: 12px 18px;
     text-decoration: none;
 }
 .active{
@@ -24,16 +35,45 @@ li a{
 li a:hover:not(.active){
     background-color:#111;
 }
-#con2{
+.main-content{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    padding: 100px;
+}
+.container{
     display: grid;
     margin-top: 10px;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-template-rows: repeat(auto-fill);
+    margin-bottom: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    padding: 20px;
+    gap: 20px;
 }
-.card .img-fit{
-    aspect-ratio: 16/9;
+.card{
+    background-color: #171520;
+    color: white;
+    border-radius: 20px;
+}
+.card-img{
+    display: block;
+    width: 100%;
     object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.card-content{
+    padding: 20px 10px;
+}
+.card-content>h2{
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+    margin: 10px 0 15px 0;
+}
+.card-content>p{
+    color: rgb(200, 200, 200);
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
 }
 .card:hover{
     background-color: rgb(62, 62, 62);
